@@ -1,0 +1,168 @@
+/* *font-family: 'Open Sans', sans-serif; */
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+/* !versus start */
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* !Header start */
+.header {
+  padding: 43px 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-img {
+  width: 89px;
+  height: 30px;
+}
+.nav {
+  display: flex;
+  gap: 40px;
+}
+.nav li {
+  height: 17px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999999;
+  transition: 0.3s;
+}
+
+.nav li:hover {
+  color: #00d6b4;
+}
+
+/* !Header end */
+
+/* !Banner start */
+
+.banner {
+  background-image: url(img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 540px;
+}
+.banner a {
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00d6b4;
+}
+
+.banner .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 540px;
+}
+.banner .container h1 {
+  font-size: 48px;
+  line-height: 53px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 465px;
+  margin-bottom: 29px;
+}
+
+.banner .quote {
+  padding: 10px 26px;
+  border: 1px solid #00d6b4;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.banner a:hover {
+  color: azure;
+}
+
+/* !Banner end */
+
+/* !Works starts */
+
+.works {
+  background: #222222;
+  padding-bottom: 101px;
+}
+.work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.work-cards img {
+  border-radius: 3px;
+}
+.works h2 {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 49px;
+  padding-bottom: 33px;
+}
+.card {
+  width: calc(100% / 3 - 40px / 3);
+}
+
+/* !Works end */
+
+/* !Footer start */
+
+.footer {
+  background-color: #222222;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer span {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #c2c2c2;
+  padding-top: 35px;
+}
+.footer p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #999999;
+  padding-bottom: 37px;
+  padding-top: 10px;
+}
+
+@media (max-width: 769px) {
+  .card {
+    width: calc(100% / 2 - 10px);
+  }
+  .card img {
+    width: 100%;
+  }
+}
+@media (max-width: 426px) {
+  .banner .container h1 {
+    font-size: 32px;
+  }
+}
